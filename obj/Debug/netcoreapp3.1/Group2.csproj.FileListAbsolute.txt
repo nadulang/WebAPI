@@ -16,3 +16,8 @@
 /Users/gigaming/Group2/obj/Debug/netcoreapp3.1/Group2.RazorTargetAssemblyInfo.cache
 /Users/gigaming/Group2/obj/Debug/netcoreapp3.1/Group2.dll
 /Users/gigaming/Group2/obj/Debug/netcoreapp3.1/Group2.pdb
+/Users/gigaming/Group2/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.JsonPatch.dll
+/Users/gigaming/Group2/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/gigaming/Group2/obj/Debug/netcoreapp3.1/Group2.csproj.CopyComplete
+/Users/gigaming/Group2/bin/Debug/netcoreapp3.1/Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+/Users/gigaming/Group2/bin/Debug/netcoreapp3.1/Newtonsoft.Json.Bson.dll

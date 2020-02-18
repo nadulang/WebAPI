@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Group2Comment.Model;
+using Microsoft.AspNetCore.JsonPatch;
 
 
 namespace Group2.Controllers
@@ -58,11 +59,12 @@ namespace Group2.Controllers
             return Ok(Comments.RemoveAll(e => e.Id == id));
         }
 
-        // [HttpPatch("{id})")]
-        // public IActionResult UpdateCaption(PhotoRequest user, int id)
-        // {
-        //     return Ok(Photos.Find(e => e.Id == id));
-        // }
+        [HttpPatch("{id}")]
+        public IActionResult patchComment( [FromBody]JsonPatchDocument<UserComment> patchComment, int id)
+        {
+            patchComment.ApplyTo(Comments.Find(e => e.Id == id));
+            return Ok(Comments.Find(e => e.Id == id));
+        }
     }
 
 }
